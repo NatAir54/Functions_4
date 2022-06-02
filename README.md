@@ -11,7 +11,7 @@ and implement its static methods:
 
 ---
 
-* `double sumGeometricElements(int a1, double t, int alim)`\
+* `double sumGeometricElements(int a1, double t, int alim)`
 
 Create function `sumGeometricElements`, determining the sum of the first positive elements of a decreasing geometric
 progression of real numbers with a given initial element of a progression a1 and a given progression step t,

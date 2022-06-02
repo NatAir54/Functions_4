@@ -17,8 +17,6 @@ class FunctionsTask4Test {
 
     @Test
     public void summaryOfTheGeometricProgressionNumbersWithIllegalArgumentException() {
-
-             
         assertThrows(IllegalArgumentException.class, () -> {
             FunctionsTask4.sumGeometricElements(100, -0.1, 20);
         });
@@ -34,23 +32,20 @@ class FunctionsTask4Test {
         assertThrows(IllegalArgumentException.class, () -> {
             FunctionsTask4.sumGeometricElements(0, 0.5, 20);
         });
-assertThrows(IllegalArgumentException.class, () -> {
+        assertThrows(IllegalArgumentException.class, () -> {
             FunctionsTask4.sumGeometricElements(10, 0.5, 20);
         });
-assertThrows(IllegalArgumentException.class, () -> {
+        assertThrows(IllegalArgumentException.class, () -> {
             FunctionsTask4.sumGeometricElements(0, 0.5, 0);
         });
-assertThrows(IllegalArgumentException.class, () -> {
+        assertThrows(IllegalArgumentException.class, () -> {
             FunctionsTask4.sumGeometricElements(100, 0.9, 100);
         });
-
-        
-        assertThrows(IllegalArgumentException.class, () -> {
+         assertThrows(IllegalArgumentException.class, () -> {
             FunctionsTask4.sumGeometricElements(-100, 0.5, -20);
         });
-assertThrows(IllegalArgumentException.class, () -> {
+        assertThrows(IllegalArgumentException.class, () -> {
             FunctionsTask4.sumGeometricElements(1, 0.9, -1);
         });
-
     }
 }

@@ -1,5 +1,8 @@
 package com.epam.rd.autotasks;
 
+import java.util.Arrays;
+import java.util.stream.DoubleStream;
+
 public class FunctionsTask4 {
     /**
      * <summary>
@@ -9,7 +12,23 @@ public class FunctionsTask4 {
      * IllegalArgumentException
      */
     public static double sumGeometricElements(int a1, double t, int alim) {
-        //TODO: Delete line below and write your own solution
-        throw new UnsupportedOperationException();
+        if (t>0 && t<1) {
+            if (a1>alim && a1>0) {
+                if (alim>=0) {
+                    double x=a1;
+                    double sum = 0;
+                    while(x>alim) {
+                       sum = sum +x;
+                       x=x*t;
+                       if(x<0.001) break;
+                    }
+                    sum = Math.round(sum);
+                    return sum;
+                }
+                else throw new IllegalArgumentException();
+            }
+            else throw new IllegalArgumentException();
+        }
+        else throw new IllegalArgumentException();
     }
 }
